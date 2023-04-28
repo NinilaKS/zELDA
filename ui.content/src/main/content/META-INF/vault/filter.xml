@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/zelda" mode="merge"/>
+    <filter root="/content/zelda" mode="merge"/>
+    <filter root="/content/dam/zelda" mode="merge">
+        <exclude pattern="/content/dam/zelda(/.*)?"/>
+        <include pattern="/content/dam/zelda/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/zelda/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/zelda" mode="merge"/>
+</workspaceFilter>

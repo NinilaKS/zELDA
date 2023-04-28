@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/zelda/clientlibs"/>
+    <filter root="/apps/zelda/components"/>
+    <filter root="/apps/zelda/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,7 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/zelda",
+        "create path (nt:unstructured) /content/dam/zelda/jcr:content",
+        "set properties on /content/dam/zelda/jcr:content\n  set cq:conf{String} to /conf/zelda\n  set jcr:title{String} to \"zELDA\"\nend"
+    ]
+}
