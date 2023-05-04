@@ -15,18 +15,28 @@
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 /* Global styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap/scss/bootstrap-utilities";
-@import '~bootstrap/dist/css/bootstrap.css';
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 html,
 body {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
   margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
 }
 
 body {
@@ -41,6 +51,24 @@ h5,
 p,
 .nav-container,
 .rw-box {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
   color: #000000;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+
+// Declare the font family
+:root {
+  --bs-body-font-family: 'Inter', sans-serif;
+  --bs-body-color: #042a4b;
+  --bs-font-sans-serif: 'Inter', sans-serif;
 }
