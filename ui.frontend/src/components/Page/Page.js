@@ -21,7 +21,7 @@ import {
 } from '@adobe/aem-react-editable-components';
 import { withRoute } from '../RouteHelper/RouteHelper';
 
-require('./Page.css');
+
 
 // This component is a variant of a Page component mapped to the
 // "zelda/components/page" resource type. For now, the rendering is
@@ -30,7 +30,7 @@ class AppPage extends Page {
   get containerProps() {
     let attrs = super.containerProps;
     attrs.className =
-      (attrs.className || '') + ' page ' + (this.props.cssClassNames || '');
+      (attrs.className || '') + ' page container-fluid ' + (this.props.cssClassNames || '');
     return attrs;
   }
 }

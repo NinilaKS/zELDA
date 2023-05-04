@@ -34,7 +34,6 @@ class Text extends Component {
         dangerouslySetInnerHTML={{
           __html: sanitizeHtml(this.props.text, sanitizeWhiteList)
         }}
-        className='container'
       />
     );
   }
