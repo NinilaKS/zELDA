@@ -10,7 +10,8 @@ import { Router } from 'react-router-dom';
 import App from './App';
 import LocalDevModelClient from './LocalDevModelClient';
 import './components/import-components';
-import './index.css';
+import './index.scss';
+import 'bootstrap/dist/js/bootstrap.js';
 
 const modelManagerOptions = {};
 if(process.env.REACT_APP_PROXY_ENABLED) {
